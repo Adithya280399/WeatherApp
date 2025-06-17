@@ -1,8 +1,8 @@
-**🌤️ Weather App**
+#🌤️ Weather App
 
 A modern, responsive weather application that fetches real-time weather data and forecasts using the Tomorrow.io API, with geolocation and persistent saved entries via a Node.js + PostgreSQL backend.
 
-**🚀 Features**
+##🚀 Features
 🌍 Search Weather by City or Pincode
 
 📍 Use Current Location (Geolocation Support)
