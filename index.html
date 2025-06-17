@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomorrow Weather App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-indigo-500 via-blue-400 to-pink-300 text-white font-sans flex flex-col items-center p-6 fade-in">
+
+    <h1 class="text-3xl font-bold mb-4 tracking-wide drop-shadow">🌤️ Weather App</h1>
+
+    <!-- Search Input -->
+    <div class="flex gap-2 w-full max-w-xl justify-center mb-4">
+      <input id="locationInput" placeholder="Enter city or pincode" 
+             class="flex-1 p-3 rounded-md text-black shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300" />
+      <button id="fetchBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md shadow-md">Get Weather</button>
+    </div>
+
+    <!-- Geo Location -->
+    <button id="geoBtn" class="bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded mb-6 shadow-md">
+      Use My Location
+    </button>
+
+    <!-- Current Weather Result -->
+    <!-- <div id="result" class="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow-lg text-white w-full max-w-xl text-center mb-4"></div> -->
+    <div id="result" class="hidden"></div>
+    <button id="saveBtn" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded mt-2 shadow hidden">
+      💾 Save to Database
+    </button>
+
+    <!-- Forecast Cards -->
+    <div id="forecast" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8 w-full max-w-6xl">
+      <!-- JS will populate forecast cards -->
+    </div>
+
+  <!-- Toggle Button -->
+  <button id="toggleSaved" class="mt-12 text-2xl font-semibold drop-shadow flex items-center gap-2 transition-transform hover:scale-105">
+    🗂️ Saved Weather Entries
+    <span id="toggleIcon" class="transition-transform">&#9654;</span>
+  </button>
+
+  <!-- Collapsible Container -->
+  <div id="savedWrapper" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+  <div id="savedEntries" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mt-4">
+    <!-- JS will populate saved entries here -->
+  </div>
+  </div>
+
+  </body>
+</html>

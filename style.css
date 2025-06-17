@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Custom Styles --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional: Improve placeholder text color */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Smooth transition for interactive elements */
+input, button {
+  transition: all 0.2s ease-in-out;
+}
