@@ -1,0 +1,16 @@
+{
+  "name": "weather-app-backend",
+  "version": "1.0.0",
+  "description": "Weather App Backend",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.x.x",
+    "pg": "^8.x.x",
+    "dotenv": "^16.x.x",
+    "cors": "^2.x.x"
+  }
+}

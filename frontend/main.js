@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_TOMORROW_API_KEY;
+const apiKey = import.meta.env.TOMORROW_API_KEY;
 const backendBaseUrl = "http://localhost:5000/api/weather";
 
 const weatherCodeMap = {
